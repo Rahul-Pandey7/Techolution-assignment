@@ -1,0 +1,61 @@
+<div class="bg-image"></div>
+<div class="main-container">
+    <form>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="inputFirstName">First Name</label>
+                <input type="text" [(ngModel)]="validateForm.fname.value" maxlength="20" name="fName"
+                    class="form-control" id="inputFirstName" placeholder="First Name">
+                <small class="text-danger" *ngIf="!validateForm.fname.invalid">Please enter valid first name</small>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="inputLastName">Last Name</label>
+                <input type="text" [(ngModel)]="validateForm.lname.value" maxlength="20" name="lName"
+                    class="form-control" id="inputLastName" placeholder="Last Name">
+                <small class="text-danger" *ngIf="!validateForm.lname.invalid">Please enter valid last name</small>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="class">Class</label>
+            <input type="text" [(ngModel)]="validateForm.class.value" name="class" class="form-control" id="class"
+                placeholder="ex: 5A">
+            <small class="text-danger" *ngIf="!validateForm.class.invalid">Please enter class details</small>
+        </div>
+        <div class="form-group">
+            <label for="YOP">Year of Passing</label>
+            <input type="number" [(ngModel)]="validateForm.yop.value" (ngModelChange)="numberOnly($event)" maxlength="4"
+                minlength="4" name="yop" class="form-control" id="YOP" placeholder="Year">
+            <small class="text-danger" *ngIf="!validateForm.yop.invalid">Please enter year greater than 2017</small>
+        </div>
+        <div class="form-group">
+            <div class="form-group">
+                <label for="percentage">Percentage</label>
+                <input type="number" [(ngModel)]="validateForm.percentage.value" name="percentage" class="form-control"
+                    id="percentage" placeholder="percentage">
+                <small class="text-danger" *ngIf="!validateForm.percentage.invalid">Please enter percentage</small>
+            </div>
+        </div>
+        <div class="form-row">
+            <button type="button" (click)="validation()" class="btn btn-outline-success">Submit</button>
+        </div>
+    </form>
+</div>
+
+
+<div class="modal" id="successModal" tabindex="-1" role="dialog" aria-labelledby="farmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content" style="border: none">
+            <div class="modal-header" style="border: none">
+                <div style="margin:auto;">
+                    <span style="color: #009688;" class="far fa-check-circle"></span>
+                    <span style="margin: auto; text-align: center;"><strong>Form submitted successfully!</strong></span>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,45 @@
+<div class="jumbotron" style="background: url('../assets/images/library.jpg')">
+    <div class="text-center mt-5">
+        <h1 class="font">Student's Database</h1>
+    </div>
+</div>
+
+<!--Table-->
+<div class="container">
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="1">
+            <thead>
+                <tr>
+                    <th><b>Students Result Board</b></th>
+
+                </tr>
+            </thead>
+        </table>
+    </div>
+    
+    <div class="tbl-header">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <thead>
+                <tr>
+                    <th><i><b>Student Name</b></i></th>
+                    <th><i><b>Roll Number</b></i></th>
+                    <th><i><b>Total Marks</b></i></th>
+                    <th><i><b>Status</b></i></th>
+                </tr>
+            </thead>
+        </table>
+    </div>
+
+    <div class="tbl-content">
+        <table cellpadding="0" cellspacing="0" border="0">
+            <tbody>            
+                <tr *ngFor = "let result of studentsResultList">
+                    <td [ngStyle]="{'color': (result.status === 'Fail') ? 'red' : (result.status === 'Pass') ? 'black' : (result.status === 'Topper') ? 'green' : ''}">{{result.name}}</td>
+                    <td [ngStyle]="{'color': (result.status === 'Fail') ? 'red' : (result.status === 'Pass') ? 'black' : (result.status === 'Topper') ? 'green' : ''}">{{result.rollNumber}} </td>
+                    <td [ngStyle]="{'color': (result.status === 'Fail') ? 'red' : (result.status === 'Pass') ? 'black' : (result.status === 'Topper') ? 'green' : ''}">{{result.totalMarks}}</td>
+                    <td [ngStyle]="{'color': (result.status === 'Fail') ? 'red' : (result.status === 'Pass') ? 'black' : (result.status === 'Topper') ? 'green' : ''}">{{result.status}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
