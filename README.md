@@ -1,27 +1,41 @@
-# TecholutionAssignment
+# Techolution-Assignment
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.12.
+Assignment of Techolution for the post of Associate UI Developer
 
-## Development server
+## Task -
+Create a web app for displaying student results and taking admission of new student in a school.
+## Technology used
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+1) HTML
+2) CSS
+3) BootStrap
+4) TypeScript
+5) Angular 6
 
-## Code scaffolding
+## How to run?
+1) Clone the repository
+2) Goto techolution-assignment folder
+3) npm install
+4) ng serve
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## All the Screenshots are available in Screenshots folder
 
-## Build
+## Mildstones Achived
+1) Displaying​ ​the​ ​students​ ​details​ ​in​ ​a​ ​table​ ​in​ ​alphabetical​ ​order​ ​of​ ​their​ ​names.
+2) Displaying ​first​ ​letter​ ​of​ ​name​ ​in​ ​uppercase.
+3) Displaying Failed and Highest mark in respective color.
+4) Validated for form submission.
+5) New students can take admission.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
 
-## Running unit tests
+## Approach
+1) Designed UI on pen and paper
+2) Planned work flow
+2) Implement Project Setup and decided required tools
+3) Implemented basic UI and basic functionalities
+4) Fixed Bugs and Improved UI
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Resources
+1) Angular.io
+2) MDN
