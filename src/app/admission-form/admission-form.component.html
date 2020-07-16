@@ -23,8 +23,8 @@
         </div>
         <div class="form-group">
             <label for="YOP">Year of Passing</label>
-            <input type="number" [(ngModel)]="validateForm.yop.value" (ngModelChange)="numberOnly($event)" maxlength="4"
-                minlength="4" name="yop" class="form-control" id="YOP" placeholder="Year">
+            <input type="number" [(ngModel)]="validateForm.yop.value" (ngModelChange)="numberOnly($event)" min="-999" max="9999"
+             name="yop" class="form-control" id="YOP" placeholder="Year">
             <small class="text-danger" *ngIf="!validateForm.yop.invalid">Please enter year greater than 2017</small>
         </div>
         <div class="form-group">
